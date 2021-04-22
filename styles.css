@@ -1,0 +1,133 @@
+:root {
+  /* primary */
+  --vary_dark_blue: hsl(233, 47%, 7%);
+  --dark_desaturated_blue: hsl(244, 38%, 16%);
+  --soft_violet: hsl(277, 64%, 61%);
+
+  /* neutral */
+  --White: hsl(0, 0%, 100%);
+  --slightly_transparent_white_main: hsla(0, 0%, 100%, 0.75);
+  --slightly_transparent_white_stats: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+  font-size: 62.5%;
+  /* font-family: 'Inter', sans-serif;  700*/
+  /* font-family: 'Lexend Deca', sans-serif; 400 */
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* styles goes ere */
+
+.main-container {
+  min-height: 100vh;
+  background-color: var(--vary_dark_blue);
+  color: var(--White);
+  font-size: 1.5rem;
+  padding: 8.8rem 2rem;
+}
+
+.main-container .cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  background-color: var(--dark_desaturated_blue);
+}
+
+.image-card .image {
+  width: 100%;
+  margin: 0;
+  filter: saturate(100%);
+  border-radius: 6px 6px 0px 0px;
+}
+
+.image-card .mobile-image {
+  display: none;
+}
+
+.stats-card {
+  padding: 0 5rem;
+}
+
+.stats-card h1 {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.stats-card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--slightly_transparent_white_main);
+}
+
+.stats-card .link {
+  color: var(--soft_violet);
+}
+
+.stats-container {
+  margin: 4rem 0;
+}
+
+.stats-container h2 {
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.stats-container p {
+  margin-top: 0.3rem;
+}
+
+/* media queries */
+
+@media (min-width: 767px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-card .mobile-image {
+    display: none;
+  }
+
+  .main-container .cards-wrapper {
+    flex-direction: row;
+  }
+
+  .cards-wrapper .image-card {
+    order: 1;
+  }
+
+  .stats-card h1 {
+    font-size: 3rem;
+  }
+
+  .stats-card p {
+    font-size: 1.5rem;
+  }
+
+  .stats-card {
+    max-width: 500px;
+    padding: 0 5rem;
+  }
+
+  .image-card {
+    max-width: 400px;
+  }
+
+  .stats-card .stats-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
