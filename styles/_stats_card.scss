@@ -1,0 +1,51 @@
+// font-family: 'Lexend Deca', sans-serif;
+// font-family: 'Inter', sans-serif;
+
+.stats-card {
+  & > * {
+    max-width: 23rem;
+    margin: auto;
+    text-align: center;
+  }
+
+  padding: 2rem 1rem;
+
+  .main-heading {
+    font-size: $text_size_2;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    color: $White;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+
+    .link {
+      color: $soft_violet;
+    }
+  }
+
+  .description {
+    color: $slightly_transparent_white_main;
+    font-size: $text_size_4;
+    font-family: "Lexend Deca", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .stats-container {
+    @include flexBox(column, center, center, 1rem);
+
+    .stats {
+      .stats-count {
+        color: $White;
+        font-size: $text_size_3;
+        font-family: "Inter", sans-serif;
+      }
+
+      .stats-for {
+        color: $slightly_transparent_white_stats;
+        font-family: "Lexend Deca", sans-serif;
+      }
+    }
+  }
+}

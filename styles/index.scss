@@ -1,0 +1,40 @@
+// imports
+
+// fonts import
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+// sass files imports
+@import "./theme";
+@import "./mixins";
+@import "./main-container";
+@import "./image_card";
+@import "./stats_card";
+
+// resets or base styling
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+// common styles
+
+.hide {
+  display: none;
+}

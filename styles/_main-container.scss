@@ -1,0 +1,14 @@
+.main-container {
+  @include flexBox(column, space-around, center, 5rem);
+
+  background-color: $vary_dark_blue;
+  min-height: 100vh;
+  padding: 5rem;
+
+  .cards-wrapper {
+    background-color: $dark_desaturated_blue;
+    max-width: max-content;
+    margin: auto;
+    border-radius: 6px;
+  }
+}
