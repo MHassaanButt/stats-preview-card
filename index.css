@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  background-color: #090b1a;
+  min-height: 100vh;
+  padding: 5rem;
+}
+
+.main-container .cards-wrapper {
+  background-color: #1b1938;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+  border-radius: 6px;
+}
+
+@media (min-width: 767px) {
+  .main-container .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.image-card {
+  position: relative;
+}
+
+.image-card::before {
+  position: absolute;
+  content: "";
+  inset: 0 0 2px 0;
+  background-color: rgba(170, 92, 219, 0.5);
+  border-radius: 6px 6px 0 0;
+}
+
+@media (min-width: 767px) {
+  .image-card::before {
+    border-radius: 0 6px 6px 0;
+    inset: 0;
+  }
+}
+
+.image-card .image {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 767px) {
+  .image-card .image {
+    border-radius: 0 6px 6px 0;
+  }
+}
+
+.image-card .desktop-image {
+  display: none;
+}
+
+@media (min-width: 767px) {
+  .image-card {
+    max-width: 45rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.stats-card {
+  padding: 2rem 1rem;
+}
+
+.stats-card > * {
+  max-width: 23rem;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .stats-card > * {
+    max-width: 45rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 767px) {
+  .stats-card {
+    padding: 4rem 4rem;
+  }
+}
+
+.stats-card .main-heading {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.stats-card .main-heading .link {
+  color: #aa5cdb;
+}
+
+@media (min-width: 767px) {
+  .stats-card .main-heading {
+    font-size: 3.5rem;
+  }
+}
+
+.stats-card .description {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 767px) {
+  .stats-card .description {
+    font-size: 1.2rem;
+    padding: 2rem 8rem 0 0;
+    line-height: 1.7;
+  }
+}
+
+.stats-card .stats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 767px) {
+  .stats-card .stats-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: unset;
+    padding: 3rem 9rem 0 0;
+    max-width: 45rem;
+  }
+}
+
+.stats-card .stats-container .stats .stats-count {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 767px) {
+  .stats-card .stats-container .stats .stats-count {
+    font-size: 2rem;
+  }
+}
+
+.stats-card .stats-container .stats .stats-for {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: 767px) {
+  .stats-card .stats-container .stats .stats-for {
+    font-size: 1.2rem;
+  }
+}
+
+.attribution {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.attribution .footer-link {
+  color: #aa5cdb;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */
