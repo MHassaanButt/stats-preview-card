@@ -10,5 +10,9 @@
     max-width: max-content;
     margin: auto;
     border-radius: 6px;
+
+    @media (min-width: 767px) {
+      display: flex;
+    }
   }
 }
