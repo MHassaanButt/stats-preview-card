@@ -94,21 +94,13 @@ To see how you can add code snippets, see below:
 ```
 
 ```css
-.proud-of-this-css {
-  @mixin flexBox($direction, $justify, $align, $gap) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
-  }
+@mixin flexBox($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
 }
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
 ```
 
 ### Useful resources
