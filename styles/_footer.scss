@@ -1,10 +1,10 @@
 .attribution {
   font-size: $text_size_3;
-  //   border: 2px solid red;
   color: $slightly_transparent_white_main;
   text-align: center;
   align-content: center;
-  a {
+
+  .footer-link {
     color: $soft_violet;
   }
 }
